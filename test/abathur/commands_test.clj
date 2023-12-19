@@ -12,9 +12,11 @@
   (testing "pwd after start the system"
     (let [path (:path (start-path))
           pwd (commands/pwd)]
+      (println pwd)
       (is (= path
              (:message pwd)))
       (is (:status pwd)))))
+
 
 (deftest rm-and-mkdir-test
   (let [folder-name "testing2321323"
