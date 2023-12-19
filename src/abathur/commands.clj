@@ -29,4 +29,5 @@
       {:status true :message "Arquivo criado com deletado"}
       {:status false :message "Arquivo não pode ser deletado"})))
 
+
 ; TODO enum com as mensagens em portugues e ingles utilizar o :xyz

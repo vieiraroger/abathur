@@ -6,7 +6,8 @@
   [path]
   (-> path
       (s/replace #"//" "/")
-      (s/replace  #"/" "\\")))
+      (s/replace  #"/" "\\")
+      (s/replace  #"\\\\" "\\")))
 
 (defn back-one-folder [folders]
   (drop-last folders))
