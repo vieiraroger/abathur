@@ -44,7 +44,7 @@
     (testing "is in the folder"
       (is (s/ends-with? (:message (commands/pwd)) folder-name)))
     (testing "back one folder"
-      (is (= starter-path
+      (is (= "Testing github actions error test"
              (:message (commands/cd "..")))))
     (testing "deleting folder used on cd test"
       (is (:status (commands/rm folder-name))))))
